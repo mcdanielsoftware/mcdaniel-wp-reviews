@@ -1,0 +1,14 @@
+{
+    "name": "mcdaniel/wp-reviews",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Rory McDaniel",
+            "email": "rory@mcdanielsoftware.com"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.2"
+    }
+}
