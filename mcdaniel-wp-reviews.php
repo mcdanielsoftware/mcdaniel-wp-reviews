@@ -39,7 +39,7 @@ function crb_load() {
 }
 
 add_action('wp_footer', function(){
-    if(wp_is_moble()){
+    if(wp_is_mobile()){
         $content = '<iframe id="reviews-iframe" src="SOURCE_URL"></iframe>';
     } else {
         $content = '<iframe id="reviews-iframe" class="open" src="SOURCE_URL"></iframe>';
