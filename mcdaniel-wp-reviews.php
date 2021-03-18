@@ -29,6 +29,7 @@ function mcdaniel_add_plugin_settings_page() {
 				->set_attribute( 'max', 5 )
 				->set_default_value( 5 ),
 			Field::make( 'text', 'mcd_google_place_id', 'Google Place ID' ),
+            Field::make( 'textarea', 'mcd_custom_css', 'Custom CSS' )
 		]);
 }
 add_action( 'carbon_fields_register_fields', 'mcdaniel_add_plugin_settings_page' );
@@ -47,10 +48,11 @@ add_action('wp_footer', function(){
 
     $content = str_replace('SOURCE_URL', get_rest_url(get_current_blog_id(), 'mcdaniel/v1/iframe/get'), $content);
     $css = file_get_contents(__DIR__ . '/iframe.css');
-   // $css = preg_replace('/[ \t]+/', ' ', preg_replace('/\s*$^\s*/m', "\n", $css));
-    // no comment
     $content .= '<style>' . $css . '</style>';
-    $content .= '<style>footer {padding-bottom: 110px!important;}</style>';
+    $customCSS =  carbon_get_theme_option('mcd_custom_css');
+    if(!empty($customCSS)){
+        $content .= '<style>' . $customCSS . '</style>';
+    }
     echo $content;
 });
 
