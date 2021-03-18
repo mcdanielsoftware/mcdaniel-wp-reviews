@@ -20,7 +20,7 @@
             display: block!important;
         }
     </style>
-    <script type="module" crossorigin src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/index.d2e1235b.js"></script>
+    <script type="module" crossorigin src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/index.a10b32ec.js"></script>
     <link rel="modulepreload" href="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/vendor.5e464d04.js">
     <link rel="stylesheet" href="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/index.719353de.css">
 </head>

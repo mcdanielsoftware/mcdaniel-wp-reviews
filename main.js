@@ -16,7 +16,7 @@ const splide = new Splide( '.splide', {
 
 window.addEventListener('DOMContentLoaded', () => {
   const body = document.getElementsByTagName('body')[0];
-  console.log(document.getElementsByTagName('body'));
+  const mobileReviewLink = document.getElementById('reviews-opener');
   function isMobile (){
     if (window.innerWidth < 301){
       if (!body.classList.contains('mobile')){
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   isMobile();
 
-  const mobileReviewLink = document.getElementById('reviews-opener');
+
 
   mobileReviewLink.onclick = function(){
     const reviewsIframe = window.parent.document.getElementById('reviews-iframe');
