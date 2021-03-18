@@ -11,18 +11,18 @@
     <meta name="mcd_google_reviews_link" content="<?php echo carbon_get_theme_option( 'mcd_google_reviews_link' );?>">
     <style>
         .mobile .splide{
-            display: none;
+            display: none!important;
         }
         #reviews-opener{
-            display: none;
+            display: none!important;
         }
         .mobile #reviews-opener{
-            display: block;
+            display: block!important;
         }
     </style>
-    <script type="module" crossorigin src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/index.60124f19.js"></script>
-    <link rel="modulepreload" href="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/vendor.5e464d04.js">
-    <link rel="stylesheet" href="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/index.719353de.css">
+    <script type="module" crossorigin src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/index.d2e1235b.js"></script>
+    <link rel="modulepreload" href="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/vendor.5e464d04.js">
+    <link rel="stylesheet" href="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/index.719353de.css">
 </head>
 <body>
 <div id="map"></div>
@@ -35,15 +35,15 @@
     <span class="relative bg-white rounded-full p-2 w-14 cursor-pointer ml-3" id="reviews-opener">
         <img
                 class="block w-full h-full"
-                src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/google-logo.27d4df7a.svg"
+                src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/google-logo.27d4df7a.svg"
                 alt=""
         />
         <div class="absolute top-0 left-0 flex" style="margin: 40px 0 0 -11px;">
-          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/star.b21b72eb.svg" alt="">
-          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/star.b21b72eb.svg" alt="">
-          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/star.b21b72eb.svg" alt="">
-          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/star.b21b72eb.svg" alt="">
-          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/star.b21b72eb.svg" alt="">
+          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/star.b21b72eb.svg" alt="">
+          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/star.b21b72eb.svg" alt="">
+          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/star.b21b72eb.svg" alt="">
+          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/star.b21b72eb.svg" alt="">
+          <img class="w-4 h-4" src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/star.b21b72eb.svg" alt="">
         </div>
       </span>
 </div>
@@ -65,7 +65,7 @@
                         </div>
                         <img
                                 class="bg-white rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1"
-                                src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/assets/google-logo.27d4df7a.svg"
+                                src="<?php echo plugins_url();?>/mcdaniel-wp-reviews/dist/assets/google-logo.27d4df7a.svg"
                                 alt=""
                         />
                     </div>

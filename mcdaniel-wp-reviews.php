@@ -39,8 +39,12 @@ function crb_load() {
 }
 
 add_action('wp_footer', function(){
-    $content = '<iframe id="reviews-iframe" src="SOURCE_URL" class="lg:w-96 w-24 lg:h-28 h-16 ml-2.5 mb-2 fixed bottom-0 left-0"></iframe>';
+    $content = '<iframe id="reviews-iframe" src="SOURCE_URL"></iframe>';
     $content = str_replace('SOURCE_URL', get_rest_url(get_current_blog_id(), 'mcdaniel/v1/iframe/get'), $content);
+    $css = file_get_contents(__DIR__ . '/iframe.css');
+   // $css = preg_replace('/[ \t]+/', ' ', preg_replace('/\s*$^\s*/m', "\n", $css));
+    // no comment
+    $content .= '<style>' . $css . '</style>';
     $content .= '<style>footer {padding-bottom: 110px!important;}</style>';
     echo $content;
 });
